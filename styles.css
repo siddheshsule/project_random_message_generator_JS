@@ -1,0 +1,87 @@
+html{
+    background-color: #f3eebd;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: cursive;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+    font-size: 7em;
+    background: -webkit-linear-gradient(#6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: auto;
+}
+
+#generate {
+    background-color: green;
+    color: white;
+    font-size: 1.5em;
+    margin: 20px auto;
+    display: block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+#generate::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red);
+    background-size: 300%;
+    z-index: -1;
+    border-radius: 7px;
+    animation: glowing 4s linear infinite;
+}
+
+#generate::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: green;
+    z-index: -2;
+    border-radius: 5px;
+}
+
+#generate:hover {
+    background-color: darkgreen;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.instruction {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
