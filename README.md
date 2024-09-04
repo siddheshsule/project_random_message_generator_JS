@@ -26,7 +26,7 @@ The Random Message Generator is a small web application designed to display a ra
 
 ## Demo
 
-You can check out a live demo of the project [here](#).
+You can check out a live demo of the project [here](#https://siddheshsule.github.io/project_random_message_generator_JS/).
 
 ## Installation
 
@@ -42,7 +42,7 @@ Make sure you have the following installed:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/random-message-generator.git
+    git clone https://github.com/siddheshsule/random-message-generator.git
     ```
 2. Navigate to the project directory:
     ```bash
